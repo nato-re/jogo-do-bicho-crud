@@ -1,5 +1,5 @@
 'use strict'
-require('dotenv').config()
+// require('dotenv').config()
 const path = require('path')
 const AutoLoad = require('fastify-autoload')
 
@@ -24,7 +24,7 @@ module.exports = async function (fastify, opts) {
     options: Object.assign({}, opts)
   })
 
-  fastify.listen(3000, '0.0.0.0', function (err) {
+  fastify.listen(process.env.PORT || 3000, err => {
     if (err) throw err
     console.log(`server listening on ${fastify.server.address().port}`)
   })
