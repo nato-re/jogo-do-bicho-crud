@@ -6,6 +6,10 @@ const AutoLoad = require('fastify-autoload')
 module.exports = async function (fastify, opts) {
   // Place here your custom code!
 
+  fastify.listen(process.env.PORT, function (err) {
+    if (err) throw err
+    console.log(`server listening on ${fastify.server.address().port}`)
+  })
   // Do not touch the following lines
 
   // This loads all plugins defined in plugins
@@ -23,8 +27,4 @@ module.exports = async function (fastify, opts) {
     options: Object.assign({}, opts)
   })
 
-  fastify.listen(process.env.PORT, function (err) {
-    if (err) throw err
-    console.log(`server listening on ${fastify.server.address().port}`)
-  })
 }
