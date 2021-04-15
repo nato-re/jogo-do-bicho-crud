@@ -25,7 +25,7 @@ const app = require('fastify')()
     options: Object.assign({}, /* opts */)
   })
 
-  app.listen(process.env.PORT || 3000, err => {
+  app.listen(process.env.PORT || 3000, process.env.HOST || '::', err => {
     if (err) throw err
     console.log(`server listening on ${app.server.address().port}`)
   })
