@@ -23,5 +23,8 @@ module.exports = async function (fastify, opts) {
     options: Object.assign({}, opts)
   })
 
-  fastify.listen(process.env.PORT, '0.0.0.0')
+  fastify.listen(process.env.PORT, function (err) {
+    if (err) throw err
+    console.log(`server listening on ${fastify.server.address().port}`)
+  })
 }
