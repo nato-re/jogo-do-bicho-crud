@@ -3,19 +3,19 @@ const beasts = [
     id: 1,
     name: 'Avestruz',
     imagePath: 'https://rlv.zcache.com.br/avestruz_o_que_e_acima_do_cartao_do_casal-r181cbcbeab7d473f9f4e9e377c947861_vgbaq_8byvr_540.jpg',
-    numbers: [1, 2, 3, 4],
+    numbers: [01, 02, 03, 04],
   },
   {
     id: 2,
     name: 'Águia',
     imagePath: 'https://64.media.tumblr.com/9f9655f752289fa48f0d8e52f33e5390/tumblr_inline_ns7sqqc0ws1s71wp9_500.jpg',
-    numbers: [5, 6, 7, 8],
+    numbers: [05, 06, 07, 08],
   },
   {
     id: 3,
     name: 'Burro',
     imagePath: 'https://sumateologica.files.wordpress.com/2010/06/burro-shrek.jpg?w=584',
-    numbers: [9, 10, 11, 12],
+    numbers: [09, 10, 11, 12],
   },
   {
     id: 4,
