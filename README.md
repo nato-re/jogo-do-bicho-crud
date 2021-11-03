@@ -7,4 +7,4 @@ Repositório do app jogo do bicho crud, tem todo o código desse app :rocket:
 <span style="color:blue">some *blue* text</span>. 
 
 
-[data é esse arquivo](data)
+[data é esse arquivo](data.js)
